@@ -1,7 +1,8 @@
 # bigbearxiong.github.io
-God bless the classroom teachers, in times like these, they try;
+God bless the classroom teachers, in times like these, they try;<\n>
 It’s just that all the domes and frills we shouldn’t have to buy
 Johnny plays on astroturf, Susie’s got the same turf too
+
 But if the great American dream dies, what good will that astroturf do?
 =====
 Now the PHD’s from Podunk are in bureaucratic glory
