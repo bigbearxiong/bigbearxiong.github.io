@@ -1,1 +1,76 @@
+<title>Temporarily for learning how to write js in html</title>
+<link rel="SHORTCUT ICON" href="favicon.ico">
+<body>
+<hr>
+<script type="text/javascript" src="http://falstad.com/swingjs/jquery/jquery.js"></script>
+<script type="text/javascript" src="http://falstad.com/swingjs/js/j2sJQueryExt.js"></script>
+<script type="text/javascript" src="http://falstad.com/swingjs/js/j2sApplet.js"></script>
+<script type="text/javascript" src="http://falstad.com/swingjs/js/j2sSwingJS.js"></script>
+<script type="text/javascript" src="http://falstad.com/swingjs/js/SJSApplet.js"></script>
+
+<script type="text/javascript">
+
+////J2S._checkLoad = true;
+
+J2S._isAsync = false;
+
+J2S.getProfile() // records repeat calls to overridden or overloaded Java methods
+
+// use ?_USE=JAVA or _USE=SIGNED or _USE=HTML5
+
+var app ;
+
+jmol_isReady = function(applet) {
+	J2S._getElement(applet, "appletdiv").style.border="1px solid blue"
+	app = applet; 
+}		
+
+Info = {
+    code: "com.falstad.Dispersion",
+	width: 800,
+	height: 400,
+	debug: false,
+	color: "#F0F0F0",
+	zIndexBase: 20000,
+	z:{monitorZIndex:100},
+	serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+	use: "HTML5",
+	j2sPath: "../swingjs/j2s",
+	jarPath: "../swingjs/java",
+//	jarFile: "JStest.jar",
+	isSigned: false,
+	disableJ2SLoadMonitor: false,
+	disableInitialConsole: false,
+        useFrame:"false",
+	readyFunction: jmol_isReady,
+        allowjavascript: true,
+	freq1:30,
+	freq2:200,
+	speed1:100,
+	speed2:30
+}
+
+SwingJS.getApplet("Dispersion", Info)
+</script>
+<p>
+
+This java applet demonstrates
+<A href="http://en.wikipedia.org/wiki/Dispersion_(optics)">dispersion</a>,
+which occurs when the speed of a wave depends on frequency.  This
+example shows two single-frequency waves on top, followed by the sum of the
+two on the bottom.  In this case,
+the lower-frequency wave has a higher speed
+(<a href="http://en.wikipedia.org/wiki/Phase_velocity">phase
+  velocity</a>), which causes the sum to change shape as it propagates
+through space.
+
+<p>
+Next: <a href="normal.html">Anomalous Dispersion</a><br>
+<a href="e-index.html">Index</a><br>
+<hr>
+<a href="http://www.falstad.com/mathphysics.html"><img src="/mathphysics_small.gif"></a>
+<a href="http://www.falstad.com/index.html"><img src="/me_small.gif"></a>
+<br><i>java@</i><i>falstad.com</i>
+<br>Generated Thu Sep 11 2008
+</body>
 
